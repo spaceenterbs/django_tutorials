@@ -1,15 +1,16 @@
 [tool.poetry]
-name = "django-bs"
+name = "django-seop-again"
 version = "0.1.0"
 description = ""
 authors = ["enterspacebs <anotherhell48@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "django_bs"}]
+packages = [{include = "django_seop_again"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^4.2.3"
+djangorestframework = "^3.14.0"
 
 
 [build-system]
