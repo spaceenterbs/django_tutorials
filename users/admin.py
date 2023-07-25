@@ -12,5 +12,4 @@ class UserAdmin(admin.ModelAdmin):
         "profile_introduce",
         "follower_num",
         "following_num",
-        "is_business",
     )

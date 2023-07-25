@@ -14,7 +14,5 @@ class User(AbstractUser):
     follower_num = models.PositiveIntegerField(default=0)
     following_num = models.PositiveIntegerField(default=0)
 
-    is_business = models.BooleanField(default=False)
-
     def __str__(self):
         return self.name  # or any other field you'd like to represent this user
