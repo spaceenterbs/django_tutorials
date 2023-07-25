@@ -7,6 +7,10 @@ class Feed(CommonModel):  # 하나의 모델 without -s
     caption = models.CharField(max_length=120)  # 게시글 내용
     contentImg = models.URLField(blank=True)  # 게시글 이미지
     likesNum = models.PositiveIntegerField(default=0)
+    feeds_category = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+    )
 
     def __str__(self):
         return self.caption  # or any other field you'd like to represent this user
