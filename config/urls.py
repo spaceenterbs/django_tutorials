@@ -19,8 +19,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("api/v1/feeds/", include("feeds.urls")),
+    path("api/v1/users/", include("users.urls")),  # users라는 폴더에서 url을 찾아줘
+    path("api/v1/feeds/", include("feeds.urls")),
     # path("api/v1/reviews/", include("reviews.urls")),
-    # path("api/v1/users/", include("users.urls")),
     # path("api/v1/"),
 ]
+
+# api/v1/users/myinfo
+# api/v1/users/profile/:username
+
+# api/v1/feeds/

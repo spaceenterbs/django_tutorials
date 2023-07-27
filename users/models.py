@@ -9,7 +9,7 @@ class User(AbstractUser):
     last_name = models.CharField(max_length=150, editable=False)
 
     name = models.CharField(max_length=150, default="")
-    profile_img = models.URLField(max_length=200)
+    profile_img = models.URLField(default="")
     profile_introduce = models.CharField(max_length=100)
     follower_num = models.PositiveIntegerField(default=0)
     following_num = models.PositiveIntegerField(default=0)

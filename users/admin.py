@@ -22,8 +22,6 @@ class UserAdmin(UserAdmin):
                 "classes": ("wide",),
             },
         ),
-        ("Permissions", {"fields": ("is_staff", "is_active", "is_superuser")}),
-        ("Important dates", {"fields": ("last_login", "date_joined")}),
     )
     list_display = (
         "id",

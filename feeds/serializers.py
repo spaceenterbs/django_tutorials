@@ -1,10 +1,15 @@
 from rest_framework import serializers
-from .models import User
+from .models import Feed
+
+from users.serializers import UserSerializer
 
 
-class UserSerializer(serializers.ModelSerializer):
+class FeedSerializer(serializers.ModelSerializer):
+    # Feed는 User의 자녀니가 직접 접근이 가능. (FK, N)
+    user = UserSerializer()
+
     class Meta:
-        model = User
+        model = Feed
         fields = "__all__"
         # fields = (
         #     "id",
